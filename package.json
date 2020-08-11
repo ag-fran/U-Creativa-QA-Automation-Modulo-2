@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2/issues"
   },
-  "homepage": "https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2#readme"
+  "homepage": "https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2#readme",
+  "devDependencies": {
+    "@wdio/cli": "^6.4.0"
+  }
 }
