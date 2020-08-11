@@ -1,0 +1,19 @@
+{
+  "name": "u-creativa-qa-automation-modulo-2",
+  "version": "1.0.0",
+  "description": "\"# U-Creativa-QA-Automation-Modulo-2\" \r # U-Creativa-QA-Automation-Modulo-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2/issues"
+  },
+  "homepage": "https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2#readme"
+}
