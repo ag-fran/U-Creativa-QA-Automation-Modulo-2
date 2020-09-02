@@ -10,8 +10,9 @@ class LoginPage extends Page {
     get SanJoseButttom () { return $('//*[@id="landingPage"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[1]/div[2]/div/div[1]/div') }
   
     get inputDeparture () { return $('//*[@id="landingPage"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[1]/div[2]/div/input') }  
-    get departureButon (){return $('//*[@id="landingPage"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[2]/div/div/div/div[1]/div')}                 
+    get departureButon (){return $('/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/div[2]/div/div/div/div[1]/div')}                 
     get inputArrival () { return $('/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/input') } 
+    get arrivalButon (){return $('/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div/div/div[1]/div') } 
    
     get inputDepartureDate () { return $('input[name ="search-outboundDate"]') } 
     //get inputArrivalDate () { return $('input[name ="search-inboundDate"]') }
@@ -38,9 +39,9 @@ class LoginPage extends Page {
 
     fligthPlaces (inputDeparture, inputArrival) {
         this.inputDeparture.setValue(inputDeparture);
-        this.inputDeparture.click();
+        this.departureButon.click();
         this.inputArrival.setValue(inputArrival);
-        this.inputArrival.click();
+        this.arrivalButon.click();
         
        
          
