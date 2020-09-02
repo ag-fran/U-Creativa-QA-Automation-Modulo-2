@@ -1,0 +1,28 @@
+{
+  "name": "u-creativa-qa-automation-modulo-2",
+  "version": "1.0.0",
+  "description": "\"# U-Creativa-QA-Automation-Modulo-2\" \r # U-Creativa-QA-Automation-Modulo-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2/issues"
+  },
+  "homepage": "https://github.com/ag-fran/U-Creativa-QA-Automation-Modulo-2#readme",
+  "devDependencies": {
+    "@wdio/cli": "^6.4.0",
+    "@wdio/local-runner": "^6.4.0",
+    "@wdio/mocha-framework": "^6.4.0",
+    "@wdio/spec-reporter": "^6.4.0",
+    "@wdio/sync": "^6.4.0",
+    "chromedriver": "^84.0.1",
+    "wdio-chromedriver-service": "^6.0.3"
+  }
+}
