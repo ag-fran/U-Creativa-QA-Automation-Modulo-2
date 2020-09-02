@@ -38,7 +38,6 @@ class LoginPage extends Page {
 
     fligthPlaces (inputDeparture, inputArrival) {
         this.inputDeparture.setValue(inputDeparture);
-      //  wait(10000);
         this.inputDeparture.click();
         this.inputArrival.setValue(inputArrival);
         this.inputArrival.click();

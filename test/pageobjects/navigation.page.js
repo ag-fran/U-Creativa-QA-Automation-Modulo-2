@@ -41,15 +41,17 @@ class NavigationPage extends Page {
    get nationality(){return $(' [name="nationality"]')}
    get opNational (){return $('/html/body/div[2]/div[3]/div[1]/div/div/div[1]/form/div[4]/div/div[1]/div/div[2]/div/div/div/form/fieldset/div[2]/div[1]/div/div[1]/label/div/select/option[2]')}
    get gender(){return $(' [name="title"]')} 
-   get opGender (){return $('//option[@value="mr"]')}
+   get opGender (){return $('/html/body/div[2]/div[3]/div[1]/div/div/div[1]/form/div[4]/div/div[1]/div/div[2]/div/div/div/form/fieldset/div[2]/div[1]/div/div[2]/label/div/select/option[2]')}
    get birthMonth(){return $(' [name="birthMonth"]')}
    get opBM (){return $('option[value="02"]')}
    get idExpirationMonth(){return $(' [name="idExpirationMonth"]')}
-   get opIDEM (){return $('option[value="02"]')}
+   get opIDEM (){return $('/html/body/div[2]/div[3]/div[1]/div/div/div[1]/form/div[4]/div/div[1]/div/div[2]/div/div/div/form/fieldset/div[3]/div/div[2]/div/div/div[1]/div[1]/div[1]/label/div/select/option[5]')}
 
    get contnueButton (){return $('button[data-test="StepControls-passengers-next"]')}
-   
-   
+  
+   get ticketFareButton (){return $('button[data-test="fareTypesFlexiButton"]')} 
+  
+   get nextButton (){return $('button[data-test="StepControls-AdditionalService-next"]')}
    
 
    busFilter(){
@@ -105,13 +107,14 @@ class NavigationPage extends Page {
     }
 
     
-        
-        
-        
-        
-
     finishForm1 (){
         this.contnueButton.click();
+    }
+    finishForm2 (){
+        this.ticketFareButton.click();
+    }
+    finishForm3 (){
+        this.nextButton.click();
     }
 
    getResults(){
@@ -128,11 +131,35 @@ class NavigationPage extends Page {
    trainFilter(){
      this.airButton.click();
    } 
+
+   get passportiDCheck () { return $('//*[@id="react-view"]/div[3]/div[1]/div/div/div[1]/form/div[1]/div[2]/div/div/div/div[2]/div[1]/div/div[2]/div/div/span[1]/p') }
+   getpassportiDCheckText(){
+    return this.passportiDCheck.getText();
+        console.log(this.passportiDCheck="584752254")
+}
+
+get phoneCheck () { return $('/html/body/div[2]/div[3]/div[1]/div/div/div[1]/form/div[1]/div[2]/div/div/div/div[2]/div[2]/div[2]') }
+   getPhoneCheckText(){
+    return this.phoneCheck.getText();
+        console.log(this.phoneCheck="22658844")
+   }
+
+   get emailCheck () { return $('/html/body/div[2]/div[3]/div[1]/div/div/div[1]/form/div[1]/div[2]/div/div/div/div[2]/div[2]/div[1]') }
+   getEmailCheckText(){
+    return this.emailCheck.getText();
+        console.log(this.emailCheck="fr87@hotmail.com")
+   }
+
+   get nameCheck () { return $('//*[@id="react-view"]/div[3]/div[1]/div/div/div[1]/form/div[1]/div[2]/div/div/div/div[2]/div[1]/div/div[1]/div/div[2]/div/span[1]') }
+   getNameCheckText(){
+    return this.nameCheck.getText();
+        console.log(this.emailCheck="Mr Prueba Final")
+   }
    
     open () {
         return super.open('');
     }
-
+   
 }
 
 module.exports = new NavigationPage();
